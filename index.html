@@ -589,6 +589,8 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 @property --pb-hover{syntax:'<length>';inherits:false;initial-value:0px}
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:52px;perspective:1800px;perspective-origin:50% 45%;max-width:760px;margin-left:auto;margin-right:auto}
 .price-grid.three{grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px}
+.price-note{max-width:620px;margin:40px auto 0;text-align:center;font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
+@media(max-width:700px){.price-note{font-size:11.5px;margin-top:32px}}
 .price-grid.three>.pkg-col:nth-child(2){--pb-rot:calc(4deg * var(--pr-damp,1));animation-delay:-1.5s;animation-duration:15.9s}
 .price-ribbon.kamp{background:#b8472f;color:#f2ede4}
 @media(max-width:980px){.price-grid.three{grid-template-columns:minmax(0,1fr);perspective:none;max-width:none}.price-grid.three>.pkg-col,.price-grid.three>.pkg-col:first-child,.price-grid.three>.pkg-col:last-child{--pb-rot:0deg;--pb-base-y:0px;--pb-scale:1;transform:none!important}}
@@ -1594,6 +1596,8 @@ position:relative;overflow:hidden;transition:color .35s}
       </div>
 
     </div>
+
+    <p class="price-note rv">Produkterna skickas till Villa Sjövik och stannar i hemmet efter produktionen.</p>
 
   </div>
 </section>
